@@ -1,0 +1,84 @@
+The Umix shell commands to get started with
+
+$ whoami
+returns the system name
+
+$ ls
+returns the list of items in the current directory
+
+$ pwd 
+
+returns the directory in which you are in ( working directory)
+
+The root directory is reffered as /
+
+ls lists out the items in the current directory .
+We can specify -F so that the items are categorizes
+
+/ indicates directory
+@ indicates link
+. indicates executable
+
+
+If we want to know more about a command what else it can do we can find it out by using any of the below two steps
+
+command --help 
+
+or 
+
+man command  --> man refers to manual
+
+The man command makes the entire terminal in to a page. There are separate navigation tools here to explore this page
+
+up / down arrow to move up and down 
+b/ space bar to skip through the pages
+/ followed by caharater to search 
+if the search returns multiple outputs N to move forward for next search result and shift + N for backward
+
+q to quit the page
+
+We can use the properties of the command at the same time  such as 
+
+ls -F -l
+
+it will return both categories
+
+we can use the combined properties to filter out the results in desired way
+-r is  to reverse the list in alphabetaical order and -t ois list the items with respsct its change time
+
+-F property with an arguement can be used to list out specific directory
+ls -F directory_name
+
+We can also list out directories in side the parent directory using /
+
+ls -F parent_dir/dir
+
+$cd is used to change the directory 
+$cd dir_name changes to the directory to which we want to navigate
+$ cd .. moves up  to the directory  as the cd with dir_name can only locate the sub directories
+$ cd - it goes to the previous directory
+
+There is significat difference between - and .. 
+- navigates to previous directory and .. navigates upper directory in the file system
+
+$ls -F -a will show the directories starts with . ..  a -> actually means show all
+
+Note : $ ls -F -a is equivalent to $ls -Fa
+
+General syntax of shell command 
+
+$ ls -F /
+$- prompt
+ls- command
+-F - option
+/ -argument
+
+The linux helps us with tab completion where if you want to use cd with dir_name . You can type cd and tab to get the things autocompleted
+
+$ clear is used to clear the terminal screen
+ $ cd is the command to get back to your home directory
+ 
+ 
+ 
+ 
+
